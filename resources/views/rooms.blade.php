@@ -2,8 +2,8 @@
 @section('content')
 <div class='container-fluid'>
     <div class='row justify-content-md-center'>
-        <div class='col col-lg-2'>
-            <a href='/form-add-room' class='btn btn-primary'>Adicionar</a>
+        <div class=''>
+            <h1>Lista de Quartos</h1>
         </div>
     </div>
 </div>
