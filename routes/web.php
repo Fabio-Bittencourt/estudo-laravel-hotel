@@ -13,5 +13,6 @@
 
 Route::get('/', function(){ return view('/index');});
 Route::get('/rooms', 'RoomController@list');
-Route::get('/form-add-room', 'RoomController@show' );
+Route::get('/{action}', 'RoomController@show' );
 Route::post('/form-add-room/add', 'RoomController@create');
+Route::get('/rooms/remove/{id}', 'RoomController@remove');
