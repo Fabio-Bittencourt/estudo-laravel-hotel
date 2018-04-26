@@ -33,8 +33,15 @@
                           <a  class='dropdown-item' href='/form-add-room'>Adicionar</a>
                         </div>
                       </li>
-
-                <li class='nav-item'><a  class='nav-link' href='#'>Hospede</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Hospedes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a  class='dropdown-item' href='/guests'>Listar</a>
+                          <a  class='dropdown-item' href='/form-add-guest'>Adicionar</a>
+                        </div>
+                      </li>
                 <li class='nav-item'><a  class='nav-link' href='#'>Reservas</a></li>
                 <li class='nav-item'><a  class='nav-link' href='#'>Checkin</a></li>
                 <li class='nav-item'><a  class='nav-link' href='#'>Checkout</a></li>

@@ -11,7 +11,7 @@ class RoomController extends Controller
     public function list(){
         $rooms = Room::all();
 
-        return view('rooms')->with('rooms', $rooms);
+        return view('rooms')->with('room', $rooms);
     }
 
     public function create(){
