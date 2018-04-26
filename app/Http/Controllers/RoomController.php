@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Supporte\Facades\DB;
-use Illuminate\Http\Request;
+use Request;
 use App\Room;
 class RoomController extends Controller
 {
@@ -12,6 +12,18 @@ class RoomController extends Controller
     public function list(){
 
         $roomCount = Room::all()->count();
-        return view('home')->with('qtd_rooms', $roomCount);
+        return view('rooms')->with('qtd_rooms', $roomCount);
+    }
+
+    public function create(){
+        $params = Request::all();
+        Room::create($params);
+
+        return redirect('/rooms');
+    }
+
+    public function show(){
+
+    return view('form-add-room');
     }
 }

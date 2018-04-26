@@ -11,4 +11,7 @@
 |
 */
 
-Route::get('/', 'RoomController@list');
+Route::get('/', function(){ return view('/index');});
+Route::get('/rooms', 'RoomController@list');
+Route::get('/form-add-room', 'RoomController@show' );
+Route::post('/form-add-room/add', 'RoomController@create');

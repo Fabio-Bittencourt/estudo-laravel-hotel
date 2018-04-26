@@ -24,7 +24,7 @@
     <body>
         <nav class='navbar navbar-light bg-light'>
             <ul class='nav-bar nav'>
-                <li class='nav-item'><a  class='nav-link' href='/'>Home</a></li>
+                <li class='nav-item'><a  class='nav-link' href='/rooms'>Quartos</a></li>
                 <li class='nav-item'><a  class='nav-link' href='#'>Hospede</a></li>
                 <li class='nav-item'><a  class='nav-link' href='#'>Reservas</a></li>
                 <li class='nav-item'><a  class='nav-link' href='#'>Checkin</a></li>
