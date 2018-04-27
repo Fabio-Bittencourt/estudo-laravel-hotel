@@ -19,13 +19,13 @@
                     <th>Data de Cadastro</th>
                     <th></th>
                 </tr>
-            @foreach($hotel_guests as $g)
+            @foreach($hotelGuest as $g)
                 <tr>
                     <td>{{$g->full_name}}</td>
                     <td>{{$g->id_rg}}</td>
                     <td>{{$g->created_at}}</td>
                     <td>
-                        <a href='/guests/remove/{{ $g->id }}' class='btn btn-danger'>Remover</a>
+                        <a href='/guests/remove/{{$g->id }}' class='btn btn-danger'>Remover</a>
                     </td>
                 </tr>
             @endforeach
