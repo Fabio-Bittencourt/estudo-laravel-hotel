@@ -24,3 +24,9 @@ Route::get('/{action}', 'HotelGuestController@show' );
 Route::post('/form-add-guest/add', 'HotelGuestController@create');
 Route::get('/guests/remove/{id}', 'HotelGuestController@remove');
 
+//Reservation
+Route::get('/reservations', 'ReservationController@list');
+Route::get('/{action}', 'ReservationController@show' );
+Route::post('/form-add-reservation/add', 'ReservationController@create');
+Route::get('/reservation/remove/{id}', 'ReservationController@remove');
+

@@ -1,10 +1,9 @@
 @extends('index')
-
 @section('content')
 <div class='container-fluid'>
     <div class='row justify-content-md-center'>
         <div class=''>
-            <h1>Formulários de cadastro de Hospedes</h1>
+            <h1>Formulários de Reservas</h1>
         </div>
     </div>
 </div>
@@ -13,16 +12,16 @@
 <div class='container'>
     <div class='row'>
         <div class='col'>
-            <form method='POST' action='/form-add-guest/add'>
+            <form method='POST' action='/form-add-reservation/add'>
                 <input type='hidden' name='_token' value={{csrf_token()}}>
                 <div class='form-group row'>
-                    <label class='col-sm-2 col-form-label'>Nome completo:</label>
+                    <label class='col-sm-2 col-form-label'>Campo</label>
                     <div class='col-sm-4'>
-                        <input type='text' name='full_name' class='form-control' />
+                        <input type='text' name='campo' class='form-control' />
                     </div>
-                    <label class='col-sm-1 col-form-label'>RG</label>
+                    <label class='col-sm-1 col-form-label'>Campo</label>
                     <div class='col-sm-3'>
-                        <input type='text' name='id_rg' class='form-control' />
+                        <input type='text' name='campo' class='form-control' />
                     </div>
                 </div>
                  <div class='form-group row'>
@@ -38,5 +37,6 @@
 
 
 
-@endsection
 
+
+@endsection

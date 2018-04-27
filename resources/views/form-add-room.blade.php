@@ -1,6 +1,15 @@
 @extends('index')
 
 @section('content')
+<div class='container-fluid'>
+    <div class='row justify-content-md-center'>
+        <div class=''>
+            <h1>Cadastro de Quartos</h1>
+        </div>
+    </div>
+</div>
+
+
 <div class='container'>
     <div class='row'>
         <div class='col'>
