@@ -19,7 +19,9 @@ class ReservationController extends Controller
         return redirect()->action('ReservationController@list');
     }
 
-    public function remove(){
+    public function remove($id){
+        $selectedReservation = Reservation::find($id);
+        $selectedReservation->delete();
 
         return redirect()->action('ReservatioController@list');
     }
