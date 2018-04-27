@@ -26,7 +26,12 @@ class HotelGuestController extends Controller
         return view($action);
     }
 
-    public function remove(){
+    public function remove($id){
+
+        $selectedGuest = HotelGuest::find($id);
+        $selectedGuest->delete();
+
+        return view('guests')->action('HotelGuestController@list');
 
     }
 }
