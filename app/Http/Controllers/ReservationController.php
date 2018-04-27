@@ -11,10 +11,14 @@ class ReservationController extends Controller
     //
     //
     public function list(){
-        return view('reservations');
+        $reservations = Reservation::all();
+
+        return view('reservations')->with('reservation', $reservations);
     }
 
     public function create(){
+        $parms = Request::all();
+        Reservation::create($params);
 
         return redirect()->action('ReservationController@list');
     }
