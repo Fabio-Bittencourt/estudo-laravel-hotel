@@ -10,7 +10,6 @@ class RoomController extends Controller
 {
     public function list(){
         $rooms = Room::all();
-
         return view('rooms')->with('room', $rooms);
     }
 
@@ -21,8 +20,8 @@ class RoomController extends Controller
         return redirect()->action('RoomController@list');
     }
 
-    public function show($action){
-    return view($action);
+    public function show(){
+    return view('form-add-room');
     }
 
     public function remove($id){

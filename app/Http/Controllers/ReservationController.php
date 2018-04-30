@@ -30,8 +30,8 @@ class ReservationController extends Controller
         return redirect()->action('ReservatioController@list');
     }
 
-    public function show($action){
+    public function show(){
 
-        return view($action);
+        return view('form-add-reservation');
     }
 }

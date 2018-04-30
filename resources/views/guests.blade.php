@@ -19,7 +19,7 @@
                     <th>Data de Cadastro</th>
                     <th></th>
                 </tr>
-            @foreach($hotelGuest as $g)
+            @foreach($hotel_guests as $g)
                 <tr>
                     <td>{{$g->full_name}}</td>
                     <td>{{$g->id_rg}}</td>

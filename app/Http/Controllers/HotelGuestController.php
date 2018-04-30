@@ -11,7 +11,7 @@ class HotelGuestController extends Controller
     public function list(){
         $hotel_guests = HotelGuest::all();
 
-        return view('guests')->with('hotelGuests', $hotel_guests);
+        return view('guests')->with('hotel_guests', $hotel_guests);
     }
 
     public function create(){
@@ -21,9 +21,9 @@ class HotelGuestController extends Controller
         return redirect('guests');
     }
 
-    public function show($action){
+    public function show(){
 
-        return view($action);
+        return view('form-add-guests');
     }
 
     public function remove($id){

@@ -13,7 +13,7 @@ class CreationHotelGuest extends Migration
      */
     public function up()
     {
-        Schema::create('hotelGuests', function($table) {
+        Schema::create('hotel_guests', function($table) {
             $table->increments('id');
             $table->string('full_name');
             $table->string('id_rg');
