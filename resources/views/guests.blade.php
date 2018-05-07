@@ -26,6 +26,7 @@
                     <td>{{$g->created_at}}</td>
                     <td>
                         <a href='/guests/remove/{{$g->id }}' class='btn btn-danger'>Remover</a>
+                        <a href='/form-edit-guest/edit/{{$g->id}}' class='btn btn-warning'>Editar</a>
                     </td>
                 </tr>
             @endforeach

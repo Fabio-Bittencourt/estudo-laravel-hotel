@@ -22,13 +22,16 @@ Route::post('/room/update/{id}', 'RoomController@update');
 
 //HotelGuest
 Route::get('/guests', 'HotelGuestController@list');
-Route::get('/form-add-guests', 'HotelGuestController@show' );
+Route::get('/form-add-guest', 'HotelGuestController@show' );
 Route::post('/form-add-guest/add', 'HotelGuestController@create');
 Route::get('/guests/remove/{id}', 'HotelGuestController@remove');
+Route::get('/form-edit-guest/edit/{id}', 'HotelGuestController@edit');
+Route::post('/guest/update/{id}', 'HotelGuestController@update');
 
+/*
 //Reservation
 Route::get('/reservations', 'ReservationController@list');
 Route::get('/{action}', 'ReservationController@show' );
 Route::post('/form-add-reservation/add', 'ReservationController@create');
 Route::get('/reservation/remove/{id}', 'ReservationController@remove');
-
+ */

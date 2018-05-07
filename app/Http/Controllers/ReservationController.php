@@ -17,7 +17,7 @@ class ReservationController extends Controller
     }
 
     public function create(){
-        $parms = Request::all();
+        $params = Request::all();
         Reservation::create($params);
 
         return redirect()->action('ReservationController@list');

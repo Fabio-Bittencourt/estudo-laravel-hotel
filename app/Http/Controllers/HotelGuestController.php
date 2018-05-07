@@ -23,7 +23,7 @@ class HotelGuestController extends Controller
 
     public function show(){
 
-        return view('form-add-guests');
+        return view('form-add-guest');
     }
 
     public function remove($id){
@@ -32,6 +32,20 @@ class HotelGuestController extends Controller
         $selectedGuest->delete();
 
         return view('guests')->action('HotelGuestController@list');
+    }
 
+    public function edit($id) {
+        $hotel_guest = HotelGuest::find($id);
+
+        return view('form-edit-guest')->with('guest', $hotel_guest);
+    }
+
+    public function update($id) {
+        $selectGuest = HotelGuest::find($id);
+        $params = Request::all();
+
+        $selectGuest->update($params);
+
+        return redirect()->action('HotelGuestController@list');
     }
 }
