@@ -30,4 +30,18 @@ class RoomController extends Controller
 
         return redirect()->action('RoomController@list');
     }
+
+    public function edit($id) {
+        $infoRoom = Room::find($id);
+
+        return view('form-edit-room')->with('infoRoom', $infoRoom);
+    }
+
+    public function update($id) {
+        $params = Request::all();
+        $selectedRoom = Room::find($id);
+        $selectedRoom->update($params);
+        return redirect()->action('RoomController@list');
+
+    }
 }

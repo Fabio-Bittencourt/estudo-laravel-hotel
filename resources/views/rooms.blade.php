@@ -18,6 +18,7 @@
                     <th>Dimensão</th>
                     <th>Descrição</th>
                     <th></th>
+                    <th></th>
                 </tr>
             @foreach($room as $r)
                 <tr>
@@ -27,7 +28,9 @@
                     <td>{{$r->description}}</td>
                     <td>
                         <a href='/rooms/remove/{{ $r->id }}' class='btn btn-danger'>Remover</a>
+                        <a href='/rooms/edit/{{$r->id}}' class='btn btn-warning'>Editar</a>
                     </td>
+
                 </tr>
             @endforeach
 

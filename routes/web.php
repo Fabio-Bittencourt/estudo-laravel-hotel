@@ -17,6 +17,8 @@ Route::get('/rooms', 'RoomController@list');
 Route::get('/form-add-room', 'RoomController@show' );
 Route::post('/form-add-room/add', 'RoomController@create');
 Route::get('/rooms/remove/{id}', 'RoomController@remove');
+Route::get('/rooms/edit/{id}', 'RoomController@edit');
+Route::post('/room/update/{id}', 'RoomController@update');
 
 //HotelGuest
 Route::get('/guests', 'HotelGuestController@list');
