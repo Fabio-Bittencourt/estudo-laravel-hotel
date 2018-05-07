@@ -28,10 +28,10 @@ Route::get('/guests/remove/{id}', 'HotelGuestController@remove');
 Route::get('/form-edit-guest/edit/{id}', 'HotelGuestController@edit');
 Route::post('/guest/update/{id}', 'HotelGuestController@update');
 
-/*
+
 //Reservation
 Route::get('/reservations', 'ReservationController@list');
 Route::get('/{action}', 'ReservationController@show' );
 Route::post('/form-add-reservation/add', 'ReservationController@create');
 Route::get('/reservation/remove/{id}', 'ReservationController@remove');
- */
+

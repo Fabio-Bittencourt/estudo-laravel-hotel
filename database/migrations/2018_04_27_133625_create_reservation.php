@@ -14,6 +14,14 @@ class CreateReservation extends Migration
     public function up()
     {
         //
+        Schema::create('reservations', function($table){
+            $table->increments('id');
+            $table->integer('id_room');
+            $table->integer('id_rg_guest');
+            $table->date('reservation_date');
+            $table->timestamps();
+
+        });
     }
 
     /**
@@ -24,5 +32,6 @@ class CreateReservation extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('reservations');
     }
 }

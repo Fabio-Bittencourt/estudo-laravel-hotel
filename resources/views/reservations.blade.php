@@ -15,9 +15,10 @@
             <table class='table table-striped'>
                 <tr>
                     <th>Numero do Quarto</th>
-                    <th>Data de Entrada</th>
+                    <th>Data de Reserva</th>
                     <th>Data de Saida</th>
                     <th>Nome do Hospede</th>
+                    <th>RG do Hospede</th>
                     <th></th>
                 </tr>
                        </table>

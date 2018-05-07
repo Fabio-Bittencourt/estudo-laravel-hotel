@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Supporte\Facades\DB;
 use Request;
 use App\Reservation;
+use App\Room;
+use App\HotelGuest;
 
 class ReservationController extends Controller
 {
@@ -31,7 +33,7 @@ class ReservationController extends Controller
     }
 
     public function show(){
-
-        return view('form-add-reservation');
+        $roomInfo = Room::all();
+        return view('form-add-reservation')->with('roomInfo', $roomInfo);
     }
 }

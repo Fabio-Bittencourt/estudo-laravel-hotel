@@ -15,9 +15,16 @@
             <form method='POST' action='/form-add-reservation/add'>
                 <input type='hidden' name='_token' value={{csrf_token()}}>
                 <div class='form-group row'>
-                    <label class='col-sm-2 col-form-label'>Campo</label>
-                    <div class='col-sm-4'>
-                        <input type='text' name='campo' class='form-control' />
+
+                    <label class='col-sm-2 col-form-label'>Numero do Quarto</label>
+                    <div class='col-sm-2'>
+                    <select type='text' class="form-control" name="id_room">
+                        @foreach($roomInfo as $roomId)
+                            <option value='{{$roomId->id}}'>{{$roomId->id}}</option>
+                        @endforeach
+                    </select>
+
+
                     </div>
                     <label class='col-sm-1 col-form-label'>Campo</label>
                     <div class='col-sm-3'>
